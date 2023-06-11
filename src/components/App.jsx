@@ -1,26 +1,10 @@
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
-
 import { Component } from 'react';
+import { nanoid } from 'nanoid';
+import styles from './App.module.css';
+
 import { Form } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
-import { nanoid } from 'nanoid';
-import styles from './App.module.css';
 
 export class App extends Component {
   state = {
